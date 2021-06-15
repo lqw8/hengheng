@@ -1,0 +1,3 @@
+<!--pages/my/my.wxml-->
+<text>{{msg}}</text>
+<view>{{num}}</view>
