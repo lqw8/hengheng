@@ -1,12 +1,11 @@
-// pages/my/my.js
+// pages/my/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    msg:"hello lqw",
-    num:2000
+
   },
 
   /**

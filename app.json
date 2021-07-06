@@ -2,19 +2,24 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/my/my",
-    "pages/category/category",
-    "pages/cart/cart"
+    "pages/my/index",
+    "pages/category/index",
+    "pages/cart/index",
+    "pages/search/index"
   ],
   "window":{
     "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarBackgroundColor": "#eb4450",
     "navigationBarTitleText": "哼乐园",
     "navigationBarTextStyle":"white",
-    "enablePullDownRefresh":true,
+    "enablePullDownRefresh":true, 
     "backgroundColor": "#eeeeee"
   },
   "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff2d4a",
+    "position": "bottom",
+    "borderStyle": "black",
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页",
@@ -22,19 +27,19 @@
       "selectedIconPath": "icons/home-o.png"
     },
     {
-      "pagePath": "pages/category/category",
+      "pagePath": "pages/category/index",
       "text": "分类",
       "iconPath": "icons/category.png",
       "selectedIconPath": "icons/category-o.png"
     },
     {
-      "pagePath": "pages/cart/cart",
+      "pagePath": "pages/cart/index",
       "text": "购物车",
       "iconPath": "icons/cart.png",
       "selectedIconPath": "icons/cart-o.png"
     },
     {
-      "pagePath": "pages/my/my",
+      "pagePath": "pages/my/index",
       "text": "我的",
       "iconPath": "icons/my.png",
       "selectedIconPath": "icons/my-o.png"
