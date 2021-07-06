@@ -1,8 +1,6 @@
 // index.js
 // 获取应用实例
 import { request } from "../../request/index.js"
-const app = getApp()
-
 Page({
   data: {
     swiperList:[],
@@ -29,28 +27,28 @@ Page({
   },
   //获取轮播图
   getSwiperList(){
-    request({url:"https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata"})
+    request({url:"/home/swiperdata"})
     .then(result=>{
         this.setData({
-          swiperList:result.data.message
+          swiperList:result
         })
     })
   },
    //获取导航
    getCateList(){
-    request({url:"https://api-hmugo-web.itheima.net/api/public/v1/home/catitems"})
+    request({url:"/home/catitems"})
     .then(result=>{
         this.setData({
-          cateList:result.data.message
+          cateList:result
         })
     })
   },
      //获取楼层
      getfloorList(){
-      request({url:"https://api-hmugo-web.itheima.net/api/public/v1/home/floordata"})
+      request({url:"/home/floordata"})
       .then(result=>{
           this.setData({
-            floorList:result.data.message
+            floorList:result
           })
       })
     }
