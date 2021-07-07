@@ -25,4 +25,3 @@
   <block wx:elif="{{tabs[2].isActive}}">2</block>
 
 </Tabs>
-
